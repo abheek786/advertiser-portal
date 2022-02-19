@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Advertiser from './components/Advertiser/Advertiser.component';
 import AdvertiserList from './components/AdvertiserList/AdvertiserList.component';
-import './index.css';
+import './index.scss';
 
 
 ReactDOM.render(
