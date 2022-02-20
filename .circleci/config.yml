@@ -9,7 +9,8 @@ jobs:
       - run:
           name: Installing AWS CLI
           command:
-            sudo apt-get install python3-pip
+            sudo apt-get upgrade
+            sudo apt install python3-pip
             sudo pip3 install awsebcli --upgrade
       - run: cd ./advertiser-portal && npm i && npm run build
       - run: aws s3 sync ./advertiser-portal/build s3://advertiserportal
