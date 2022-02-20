@@ -11,7 +11,7 @@ jobs:
           command:
             sudo apt-get update
             sudo apt install python3-pip
-            sudo pip3 install awsebcli --upgrade
+            sudo pip3 install awsebcli
       - run: cd ./advertiser-portal && npm i && npm run build
       - run: aws s3 sync ./advertiser-portal/build s3://advertiserportal
 
